@@ -1,0 +1,14 @@
+Ref(s),Component,Value / Marking,Qty,Notes
+U1,555 timer IC,NE555P (8-pin DIP),1,Needs Vcc >= 4.5 V; 8-pin socket recommended
+Q1,Transistor (NPN),2N3904 (TO-92),1,Orientation matters (flat face = E-B-C); do NOT substitute BC548
+R1,Resistor,22 kOhm (red-red-orange-gold),1,Sets the breathe speed
+"R2, R3",Resistor,220 Ohm (red-red-brown-gold),2,One per LED
+C1,Electrolytic capacitor,100 uF,1,Polarity matters (longer leg = +)
+C2,Ceramic capacitor,0.01 uF (marked 103),1,No polarity
+"D1, D2",LED,3 mm (any color),2,Polarity matters (flat edge / short leg = cathode)
+BT1,Battery holder,3xAA (4.5 V),1,e.g. DFRobot FIT0619
+"X1, X2",SAO add-on connector,2x3 pin header,2,OPTIONAL; add 2x 1N4148 in series if you connect anything (4.5 V -> ~3.1 V)
+-,IC socket,8-pin DIP,1,Optional but recommended
+-,Jumper wire,short offcut,1,Required Rev-1 bodge: Q1 collector -> VCC
+-,1N4148 diode,-,2,Optional; only if using the SAO ports (voltage drop)
+-,AA battery,1.5 V,3,User-supplied
